@@ -7,4 +7,6 @@ app.set("PORT", 5000);
 
 router(app);
 
+app.use(express.static('public'));
+
 app.listen(app.get("PORT"), () => console.log("Server is started on port " + app.get("PORT")));

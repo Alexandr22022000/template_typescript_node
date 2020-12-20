@@ -1,7 +1,7 @@
 import { Application } from "express";
 
 const router = (app: Application) => {
-    app.get("/*", (req, res) => {
+    app.get("/hello", (req, res) => {
         res.send("Hello world!").status(600);
     });
 };
